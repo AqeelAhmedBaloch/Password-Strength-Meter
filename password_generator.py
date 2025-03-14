@@ -5,7 +5,7 @@ import html
 
 # Page configuration
 st.set_page_config(
-    page_title="Password Generator",
+    page_title="Password Strength Meter",
     page_icon="🔒",
     layout="centered",
     initial_sidebar_state="collapsed"
