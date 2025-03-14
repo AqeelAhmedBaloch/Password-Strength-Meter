@@ -1,0 +1,120 @@
+/* Modern gradient background */
+.stApp {
+    background: linear-gradient(120deg, #0a192f 0%, #203a43 100%);
+}
+
+/* Container with glass effect */
+.main {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 2.5rem;
+    max-width: 900px;
+    margin: 2rem auto;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Typography improvements */
+h1, h2, h3, .stMarkdown, p, label {
+    color: #e6e6e6 !important;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* Modern button styling */
+.stButton button {
+    background: linear-gradient(45deg, #00ff87 0%, #60efff 100%) !important;
+    color: #0a192f !important;
+    font-weight: 600 !important;
+    padding: 0.6rem 1.5rem !important;
+    border-radius: 8px !important;
+    border: none !important;
+    box-shadow: 0 4px 15px rgba(0, 255, 135, 0.2);
+    transition: all 0.3s ease !important;
+    width: auto !important;
+    min-width: 200px;
+    max-width: 300px;
+    margin: 0 auto !important;
+    display: block !important;
+}
+
+.stButton button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 255, 135, 0.3);
+}
+
+/* Enhanced password display */
+.password-display {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 2rem;
+    margin: 1.5rem auto;
+    max-width: 700px;
+    text-align: center;
+}
+
+/* Code block styling */
+.stCodeBlock {
+    background: rgba(255, 255, 255, 0.95) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+}
+
+.stCodeBlock > div {
+    width: 100% !important;
+    max-width: 800px !important;
+}
+
+/* Slider improvements */
+.stSlider div[data-baseweb="slider"] {
+    background: transparent !important;
+}
+
+.stSlider div[data-baseweb="slider"] div[role="slider"] {
+    background: linear-gradient(45deg, #00ff87 0%, #60efff 100%);
+    box-shadow: 0 2px 8px rgba(0, 255, 135, 0.3);
+    border: 2px solid white;
+}
+
+/* Checkbox styling */
+.stCheckbox label {
+    color: #e6e6e6 !important;
+}
+
+.stCheckbox div[role="checkbox"] {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 2px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Info message styling */
+.info-msg {
+    background: rgba(96, 239, 255, 0.1);
+    border-left: 4px solid #60efff;
+    border-radius: 4px;
+    padding: 1rem;
+    text-align: center;
+    max-width: 800px !important;  /* Increased from 300px */
+    width: 100% !important;
+    margin: 1rem auto;
+}
+
+/* Hide Streamlit branding */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+
+/* Divider styling */
+hr {
+    border-color: rgba(255, 255, 255, 0.1);
+    margin: 2rem 0;
+}
+
+/* Footer styling */
+footer p {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
