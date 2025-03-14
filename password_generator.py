@@ -11,13 +11,39 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# Load external CSS
-def load_css(css_file):
-    with open(css_file) as f:
-        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
-
-# Load the external CSS file
-load_css('style.css')
+# Add CSS styles directly
+st.markdown("""
+<style>
+    .stButton > button {
+        width: 100%;
+        background-color: #1e88e5;
+        color: white;
+        border-radius: 5px;
+        padding: 0.5rem 1rem;
+        font-size: 1.1em;
+    }
+    .stButton > button:hover {
+        background-color: #1976d2;
+        border-color: #1976d2;
+    }
+    .password-display {
+        margin: 2rem 0;
+        padding: 1rem;
+        border-radius: 5px;
+        background-color: #f0f2f6;
+    }
+    .info-msg {
+        text-align: center;
+        margin: 1rem 0;
+    }
+    div.stMarkdown p {
+        text-align: center;
+    }
+    div.stSlider {
+        padding: 1rem 0;
+    }
+</style>
+""", unsafe_allow_html=True)
 
 def generate_password(length, use_digits, use_special):
     characters = string.ascii_letters # include all Letters (a-z, A-Z)
